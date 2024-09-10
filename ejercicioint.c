@@ -271,3 +271,33 @@ void realizarDeposito(int indiceCliente)
      printf("retire su efectivo. Dinero disponible: %f\n", saldos[indiceCliente] = saldos[indiceCliente] - monto);
    }
 }
+
+void realizarTransferencia(int indiceCliente)
+{
+    int cuentaDestino;
+    float monto;
+
+    printf("ingrese el numero de cuenta a la que quiera transferir");
+    scanf("%d", &cuentaDestino);
+
+    int cuentaDestinoIndice = -1;
+    for (int i =0; i <MAX_CLIENTES; i++)
+    {
+        if (cuentas [i] == cuentaDestino) {
+            cuentaDestinoIndice
+        }
+    }
+
+    do
+    {
+       printf("ingrese el monto a transferir\n");
+       scanf("%f", &monto);
+
+       if (monto <= 0)
+       {
+        printf("el monto no puede ser negativo o nulo");
+       }
+    } while (monto<= 0);
+
+    
+}
